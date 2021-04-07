@@ -3,6 +3,8 @@ import os
 
 client = discord.Client()
 
+print('Starting bot...')
+
 @client.event
 async def on_ready():
     print(f'Successfully logged in as {client.user}.')
