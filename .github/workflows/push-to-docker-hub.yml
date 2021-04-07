@@ -17,7 +17,7 @@ jobs:
         ref: 'production'
 
     - name: Build the Docker image
-      run: docker build --file "Dockerfile" --tag "ga-bot:latest" .
+      run: docker build --file "Dockerfile" --tag "bacod-bot-discord:latest" .
     
     - name: Login to Docker Hub
       env: 
@@ -25,4 +25,4 @@ jobs:
       run: docker login --username gldnpz --password $ACCESS_TOKEN
     
     - name: Push to registry
-      run: docker push "gldnpz/ga-bot:latest"
+      run: docker push "gldnpz/bacod-bot-discord:latest"
